@@ -10,7 +10,7 @@
     document.querySelector(".theme-btn").addEventListener("click", () => {
         document.body.classList.toggle("light-mode");
         let dark = document.getElementsByClassName("dark-mode");
-        let light = document.getElementsByClassName("light-mode");
+        let light = document.getElementsByClassName("light");
         for (let i = 0; i < dark.length; i++) {
             if (dark[i].style.display == "block") dark[i].style.display = "none";
             else dark[i].style.display = "block";
