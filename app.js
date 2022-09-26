@@ -9,5 +9,13 @@
     });
     document.querySelector(".theme-btn").addEventListener("click", () => {
         document.body.classList.toggle("light-mode");
+        document.getElementsByClassName("dark-mode").forEach( () => {
+            if (this.style.display == "block") this.style.display = "none";
+            else this.style.display = "block";
+        });
+        document.getElementsByClassName("light-mode").forEach( () => {
+            if (this.style.display == "block") this.style.display = "none";
+            else this.style.display = "block";
+        });
     })
 })();
