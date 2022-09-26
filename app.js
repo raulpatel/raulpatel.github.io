@@ -9,13 +9,15 @@
     });
     document.querySelector(".theme-btn").addEventListener("click", () => {
         document.body.classList.toggle("light-mode");
-        document.getElementsByClassName("dark-mode").forEach( () => {
-            if (this.style.display == "block") this.style.display = "none";
-            else this.style.display = "block";
-        });
-        document.getElementsByClassName("light-mode").forEach( () => {
-            if (this.style.display == "block") this.style.display = "none";
-            else this.style.display = "block";
-        });
+        let dark = document.getElementsByClassName("dark-mode");
+        let light = document.getElementsByClassName("light-mode");
+        for (el of dark) {
+            if (el.style.display == "block") el.style.display = "none";
+            else el.style.display = "block";
+        };
+        for (el of light) {
+            if (el.style.display == "block") el.style.display = "none";
+            else el.style.display = "block";
+        };
     })
 })();
