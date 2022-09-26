@@ -11,13 +11,13 @@
         document.body.classList.toggle("light-mode");
         let dark = document.getElementsByClassName("dark-mode");
         let light = document.getElementsByClassName("light-mode");
-        for (el of dark) {
-            if (el.style.display == "block") el.style.display = "none";
-            else el.style.display = "block";
+        for (let i = 0; i < dark.length; i++) {
+            if (dark[i].style.display == "block") dark[i].style.display = "none";
+            else dark[i].style.display = "block";
         };
-        for (el of light) {
-            if (el.style.display == "block") el.style.display = "none";
-            else el.style.display = "block";
+        for (let i = 0; i < light.length; i++) {
+            if (light[i].style.display == "block") light[i].style.display = "none";
+            else light[i].style.display = "block";
         };
     })
 })();
