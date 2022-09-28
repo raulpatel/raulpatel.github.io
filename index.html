@@ -477,22 +477,23 @@
               <form
                 action="contact-form-process-raulp.php"
                 method="post"
-                class="dark-mode contact-form"
-                display="inline-block"
+                class="contact-form"
               >
                 <div class="input-control i-c-2">
-                  <label for="Name">Name:</label>
-                  <input type="text" required placeholder="YOUR NAME" />
-                  <label for="Email">Email:</label>
-                  <input type="email" required placeholder="YOUR EMAIL" />
+                  <label class="dark-mode" display="inline-block" for="Name">Name:</label>
+                  <input class="dark-mode" display="inline-block" type="text" required placeholder="YOUR NAME" />
+                  <label class="dark-mode" display="inline-block" for="Email">Email:</label>
+                  <input class="dark-mode" display="inline-block" type="email" required placeholder="YOUR EMAIL" />
                 </div>
                 <div class="input-control">
-                  <label for="Subject">Subject:</label>
-                  <input type="text" required placeholder="ENTER SUBJECT" />
+                  <label class="dark-mode" display="inline-block" for="Subject">Subject:</label>
+                  <input class="dark-mode" display="inline-block" type="text" required placeholder="ENTER SUBJECT" />
                 </div>
                 <div class="input-control">
-                  <label for="Message:">Message:</label>
+                  <label class="dark-mode" display="inline-block" for="Message:">Message:</label>
                   <textarea
+                    class="dark-mode" 
+                    display="inline-block"
                     name=""
                     id=""
                     cols="15"
@@ -501,7 +502,7 @@
                   ></textarea>
                 </div>
                 <div class="submit-btn">
-                  <button type="submit">Send Message</button>
+                  <button class="dark-mode" display="inline-block" type="submit">Send Message</button>
                 </div>
               </form>
             </div>
@@ -514,18 +515,20 @@
                   display="none"
                 >
                   <div class="input-control i-c-2">
-                    <label for="Name">Name:</label>
-                    <input type="text" required placeholder="YOUR NAME" />
-                    <label for="Email">Email:</label>
-                    <input type="email" required placeholder="YOUR EMAIL" />
+                    <label class="light" display="none" for="Name">Name:</label>
+                    <input class="light" display="none" type="text" required placeholder="YOUR NAME" />
+                    <label class="light" display="none" for="Email">Email:</label>
+                    <input class="light" display="none" type="email" required placeholder="YOUR EMAIL" />
                   </div>
                   <div class="input-control">
-                    <label for="Subject">Subject:</label>
-                    <input type="text" required placeholder="ENTER SUBJECT" />
+                    <label class="light" display="none" for="Subject">Subject:</label>
+                    <input class="light" display="none" type="text" required placeholder="ENTER SUBJECT" />
                   </div>
                   <div class="input-control">
-                    <label for="Message:">Message:</label>
+                    <label class="light" display="none" for="Message:">Message:</label>
                     <textarea
+                      class="light" 
+                      display="none"
                       name=""
                       id=""
                       cols="15"
@@ -534,7 +537,7 @@
                     ></textarea>
                   </div>
                   <div class="submit-btn">
-                    <button type="submit">Send Message</button>
+                    <button class="light" display="none" type="submit">Send Message</button>
                   </div>
                 </form>
               </div>
