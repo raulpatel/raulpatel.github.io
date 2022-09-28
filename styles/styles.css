@@ -896,4 +896,8 @@ section {
   }
 }
 
+.bg-text {
+  color:rgba(0, 0, 0, 0.3);
+}
+
 /*# sourceMappingURL=styles.css.map */
