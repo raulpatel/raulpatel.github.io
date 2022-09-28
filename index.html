@@ -488,10 +488,10 @@
                 </div>
               </div>
             </div>
-            <div class="right-contact">
+            <div class="dark-mode right-contact" display="inline-block">
               <!-- Using the contact form email php script from https://www.majesticform.com/form-guides/html-email-form -->
               <form
-                action="contact-form-process.php"
+                action="contact-form-process-raulp.php"
                 method="post"
                 class="contact-form"
               >
@@ -520,6 +520,38 @@
                 </div>
               </form>
             </div>
+            <div class="light right-contact" display="none">
+                <!-- Using the contact form email php script from https://www.majesticform.com/form-guides/html-email-form -->
+                <form
+                  action="contact-form-process-sunnyr.php"
+                  method="post"
+                  class="contact-form"
+                >
+                  <div class="input-control i-c-2">
+                    <label for="Name">Name:</label>
+                    <input type="text" required placeholder="YOUR NAME" />
+                    <label for="Email">Email:</label>
+                    <input type="email" required placeholder="YOUR EMAIL" />
+                  </div>
+                  <div class="input-control">
+                    <label for="Subject">Subject:</label>
+                    <input type="text" required placeholder="ENTER SUBJECT" />
+                  </div>
+                  <div class="input-control">
+                    <label for="Message:">Message:</label>
+                    <textarea
+                      name=""
+                      id=""
+                      cols="15"
+                      rows="8"
+                      placeholder="Message Here..."
+                    ></textarea>
+                  </div>
+                  <div class="submit-btn">
+                    <button type="submit">Send Message</button>
+                  </div>
+                </form>
+              </div>
           </div>
         </div>
       </section>
