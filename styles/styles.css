@@ -3,7 +3,7 @@
   padding: 0;
   box-sizing: border-box;
   list-style: none;
-  text-shadow: 1px,1px,1px,#000;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
 }
 
 :root {
@@ -292,6 +292,7 @@ section {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 2rem;
+  margin-bottom: 4rem;
 }
 .about-stats .progress-bars .progress-bar {
   display: flex;
@@ -300,6 +301,7 @@ section {
 .about-stats .progress-bars .progress-bar .prog-title {
   text-transform: uppercase;
   font-weight: 500;
+  text-align: center;
 }
 .about-stats .progress-bars .progress-bar .progress-con {
   display: flex;
@@ -324,23 +326,20 @@ section {
   transition: all 0.4s ease-in-out;
   width: 60%;
 }
-.about-stats .progress-bars .progress-bar .progress-con .progress .html {
-  width: 80%;
+.about-stats .progress-bars .progress-bar .progress-con .progress .Cplusplus {
+  width: 50%;
 }
 .about-stats .progress-bars .progress-bar .progress-con .progress .css {
-  width: 95%;
+  width: 5%;
 }
 .about-stats .progress-bars .progress-bar .progress-con .progress .js {
-  width: 75%;
+  width: 10%;
 }
-.about-stats .progress-bars .progress-bar .progress-con .progress .react {
-  width: 60%;
-}
-.about-stats .progress-bars .progress-bar .progress-con .progress .node {
-  width: 87%;
+.about-stats .progress-bars .progress-bar .progress-con .progress .C {
+  width: 5%;
 }
 .about-stats .progress-bars .progress-bar .progress-con .progress .python {
-  width: 70%;
+  width: 30%;
 }
 
 .stat-title {
@@ -359,6 +358,11 @@ section {
   height: 1px;
   background-color: var(--color-grey-5);
   transform: translateX(-50%);
+  text-align: center;
+}
+
+.timeline-title {
+  margin: 0% 42%;
 }
 
 /*Timeline*/
@@ -372,6 +376,9 @@ section {
   position: relative;
   padding-left: 3rem;
   border-left: 1px solid var(--color-grey-5);
+}
+.timeline .university{
+  border-left: 0px;
 }
 .timeline .timeline-item .tl-icon {
   position: absolute;
@@ -453,8 +460,9 @@ section {
 }
 .portfolios .portfolio-item .hover-items h3 {
   font-size: 1.5rem;
-  color: var(--color-white);
+  color: var(--color-grey0);
   margin-bottom: 1.5rem;
+  text-align: center;
 }
 .portfolios .portfolio-item .hover-items .icons {
   display: flex;

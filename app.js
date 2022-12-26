@@ -31,13 +31,33 @@
     }
 
     for (let i = 3; i < dark.length; i++) {
-      if (dark[i].style.display == "inline-block")
+      if (i == 9) {
+        if (dark[i].style.display == "inline")
+          dark[i].style.display = "none";
+        else dark[i].style.display = "inline";
+      }
+      else if (i == 12) {
+        if (dark[i].style.display == "block")
+          dark[i].style.display = "none";
+        else dark[i].style.display = "block";
+      }
+      else if (dark[i].style.display == "inline-block")
         dark[i].style.display = "none";
       else dark[i].style.display = "inline-block";
     }
 
     for (let i = 3; i < light.length; i++) {
-      if (light[i].style.display == "inline-block")
+      if (i == 9) {
+        if (light[i].style.display == "inline")
+          light[i].style.display = "none";
+        else light[i].style.display = "inline";
+      }
+      else if (i == 10) {
+        if (light[i].style.display == "block")
+          light[i].style.display = "none";
+        else light[i].style.display = "block";
+      }
+      else if (light[i].style.display == "inline-block")
         light[i].style.display = "none";
       else light[i].style.display = "inline-block";
     }
