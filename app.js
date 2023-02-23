@@ -63,13 +63,20 @@
     }
 
   });
-
+  // dynamically update my age in the intro based on the date
   let ageText = document.getElementsByClassName("age");
   let d1 = Date.now();
   let d2 = new Date(2000,2,24).getTime();
   let date1 = new Date(d1);
   let date2 = new Date(d2);
+  let m1 = date1.getMonth();
+  let dt1 = date1.getDate();
+  // calculate difference between current year and 2000, doesn't acount for date
   let yearsDiff =  date2.getFullYear() - date1.getFullYear();
+  // checks if it is before my birthdate to adjust the age
+  if ((m1 < 1) || ((m1 == 1) && (dt1 < 24))) {
+    yearsDiff += 1;
+  }
   for (let i = 0; i < ageText.length; i++) {
     ageText[i].innerHTML = -1 * yearsDiff;
   }
